@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Scripts/pracscripts.js"></script>
+
+    <link href="Styles/Prac.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="#">Menu</a>
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="FeedBack.html">FeedBack</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <br />
+    <a href="Home.html" class="btn btn-success" id="hbtn">Home</a>
+    <br />
+    <br />
+    <article id="article">
+        <h3 class="Headings">Please fill out the form below</h3>
+        <hr />
+    <form action="" method="post" onsubmit="return FormValidation();" onchange="return FormValidation();">
+        
+            <label>First Name</label>
+            <div class="input-wrapper">
+                <input type="text" placeholder="First Name" id="firstname" name="name" />
+            </div>
+
+            <label>Last Name</label>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Last Name" id="lastname" name="name" />
+            </div>
+
+            <label>Gender:</label><br />
+            <select id="slGender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>DOB:</label><br />
+            <input type="date" id="dpDOB" required /><br />
+
+            <label>Phone Number:</label><br />
+            <input type="tel" id="txtPhoneNumber" value="" maxlength="10" placeholder="Enter Your Phone Number" /><br />
+
+            <label>Email Address:</label><br />
+            <input type="email" id="txtEmail" required="required" placeholder="Enter Your Email" /><br />
+
+            <label>Comments:</label><br />
+            <textarea id="txtYourComment" required="required" rows="5" maxlength="1000"></textarea><br />
+
+            <label>Rate My Site</label>
+            <input type="number" id="txtRating" value="10" required="Required" min="1" max="10" /><br />
+
+             <button class="FormValidation()">submit</button>
+            <input type="reset" name="btnClear" value="Clear" class="btnclear"><br />
+            <br />
+        </form>
+        
+        <br />
+        </article>
+</body>
+</html>
